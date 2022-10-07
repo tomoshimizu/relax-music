@@ -1,0 +1,32 @@
+PODS:
+  - AWSCognito (2.19.1):
+    - AWSCore (= 2.19.1)
+  - AWSCore (2.19.1)
+  - AWSS3 (2.19.1):
+    - AWSCore (= 2.19.1)
+  - SDWebImage (5.12.0):
+    - SDWebImage/Core (= 5.12.0)
+  - SDWebImage/Core (5.12.0)
+
+DEPENDENCIES:
+  - AWSCognito
+  - AWSCore
+  - AWSS3
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - AWSCognito
+    - AWSCore
+    - AWSS3
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AWSCognito: f50de600804941d083af37a7568905f31a774727
+  AWSCore: 55c154ae27efc5c98bdc30a0eeea5a35d10a2ab5
+  AWSS3: 2272253b098d07803af8dd20ce6ce7302bcffb47
+  SDWebImage: 4ea20cca2986adc5aacde07aa686742fd4c67a37
+
+PODFILE CHECKSUM: f76753a25afcdae9e7d7efbb708b0f7f0ff0203f
+
+COCOAPODS: 1.11.2
