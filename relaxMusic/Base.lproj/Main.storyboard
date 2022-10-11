@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83j-Zp-uAb" userLabel="Title Lbl">
-                                <rect key="frame" x="107" y="38.333333333333336" width="200" height="23.333333333333336"/>
+                                <rect key="frame" x="107" y="56.666666666666664" width="200" height="23.333333333333336"/>
                                 <attributedString key="attributedText">
                                     <fragment content="寝る前に聴きたい音楽">
                                         <attributes>
@@ -595,13 +595,13 @@
                         <constraints>
                             <constraint firstItem="5IM-z1-g4H" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="0Oc-zN-wHX"/>
                             <constraint firstItem="5IM-z1-g4H" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="6Aj-Sl-HZM"/>
-                            <constraint firstItem="83j-Zp-uAb" firstAttribute="centerY" secondItem="xG8-gz-cjW" secondAttribute="centerY" id="QHs-VD-d9r"/>
-                            <constraint firstItem="xG8-gz-cjW" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="VKR-bL-pry"/>
+                            <constraint firstItem="83j-Zp-uAb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cu1-ew-uvD"/>
+                            <constraint firstItem="xG8-gz-cjW" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="STn-jZ-XIP"/>
                             <constraint firstItem="5IM-z1-g4H" firstAttribute="top" secondItem="xG8-gz-cjW" secondAttribute="bottom" id="YST-4R-LiS"/>
+                            <constraint firstItem="5IM-z1-g4H" firstAttribute="top" secondItem="83j-Zp-uAb" secondAttribute="bottom" constant="20" id="ZqQ-3q-SGC"/>
                             <constraint firstAttribute="trailing" secondItem="xG8-gz-cjW" secondAttribute="trailing" id="c4e-hZ-Wpl"/>
                             <constraint firstItem="xG8-gz-cjW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="mFz-HB-Tgt"/>
                             <constraint firstItem="5IM-z1-g4H" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="pTI-gs-zLL"/>
-                            <constraint firstItem="83j-Zp-uAb" firstAttribute="centerX" secondItem="xG8-gz-cjW" secondAttribute="centerX" id="r3j-qx-geh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sleep" image="moon.stars" catalog="system" selectedImage="moon.stars" id="acW-dT-cKf"/>
@@ -770,8 +770,8 @@
                                     <constraint firstAttribute="height" constant="100" id="Fz5-iS-cbv"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="hFO-be-saW">
-                                <rect key="frame" x="0.0" y="100" width="414" height="1400"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="hFO-be-saW">
+                                <rect key="frame" x="0.0" y="100" width="414" height="1401"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-lS-t6M" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
@@ -795,7 +795,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-c8-4LF">
-                                                                <rect key="frame" x="0.0" y="53.333333333333243" width="374" height="177.66666666666663"/>
+                                                                <rect key="frame" x="0.0" y="53.333333333333357" width="374" height="177.66666666666663"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ewe-Ux-yF6">
                                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="177.66666666666666"/>
@@ -821,7 +821,7 @@
                                                                                 </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnT-lp-myF">
-                                                                                <rect key="frame" x="0.0" y="160" width="177" height="17.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="159.99999999999997" width="177" height="17.666666666666657"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="柔らかな日差し">
                                                                                         <attributes>
@@ -859,7 +859,7 @@
                                                                                 </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMO-UV-UQB">
-                                                                                <rect key="frame" x="0.0" y="160" width="177" height="17.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="159.99999999999997" width="177" height="17.666666666666657"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="揺れるコスモス">
                                                                                         <attributes>
@@ -957,7 +957,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-7C-RP2">
-                                                                <rect key="frame" x="0.0" y="468.6666666666668" width="374" height="177.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="468.66666666666669" width="374" height="177.66666666666669"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="goe-jF-PoU">
                                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="177.66666666666666"/>
@@ -983,7 +983,7 @@
                                                                                 </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-P1-eLk">
-                                                                                <rect key="frame" x="0.0" y="159.99999999999977" width="177" height="17.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="160" width="177" height="17.666666666666657"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="渚の忘れ物">
                                                                                         <attributes>
@@ -1021,7 +1021,7 @@
                                                                                 </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpb-Ro-zjv">
-                                                                                <rect key="frame" x="0.0" y="159.99999999999977" width="177" height="17.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="160" width="177" height="17.666666666666657"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="見守る大樹">
                                                                                         <attributes>
@@ -1040,7 +1040,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jtY-8D-tyD" userLabel="Music Box Stack View">
-                                                        <rect key="frame" x="0.0" y="676.33333333333348" width="374" height="646.33333333333348"/>
+                                                        <rect key="frame" x="0.0" y="676.33333333333326" width="374" height="646.33333333333326"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-av-myg" userLabel="Sub Title Lbl2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="23.333333333333332"/>
@@ -1055,7 +1055,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ltn-ly-R00">
-                                                                <rect key="frame" x="0.0" y="53.333333333333016" width="374" height="177.66666666666663"/>
+                                                                <rect key="frame" x="0.0" y="53.333333333333243" width="374" height="177.66666666666663"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-bN-WWY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="177.66666666666666"/>
@@ -1136,7 +1136,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qi7-Re-lcp">
-                                                                <rect key="frame" x="0.0" y="261" width="374" height="177.66666666666663"/>
+                                                                <rect key="frame" x="0.0" y="260.99999999999989" width="374" height="177.66666666666663"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7sG-dv-Ubp">
                                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="177.66666666666666"/>
@@ -1217,7 +1217,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UVS-bO-MyA">
-                                                                <rect key="frame" x="0.0" y="468.66666666666657" width="374" height="177.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="468.66666666666669" width="374" height="177.66666666666669"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UQ4-ok-Eai">
                                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="177.66666666666666"/>
@@ -1321,8 +1321,8 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="cZe-1L-klO"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="v4F-vR-EpO"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-iQ-EJQ" userLabel="Title Lbl">
-                                <rect key="frame" x="75" y="38" width="265" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-iQ-EJQ" userLabel="Title Lbl">
+                                <rect key="frame" x="87" y="56.666666666666664" width="240" height="23.333333333333336"/>
                                 <attributedString key="attributedText">
                                     <fragment content="頑張りたいときに聴く音楽">
                                         <attributes>
@@ -1338,11 +1338,11 @@
                         <viewLayoutGuide key="safeArea" id="QeK-8x-8x2"/>
                         <color key="backgroundColor" red="0.37254901960784315" green="0.61960784313725492" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hFO-be-saW" firstAttribute="top" secondItem="GKe-iQ-EJQ" secondAttribute="bottom" constant="20" id="AeL-AK-Llx"/>
                             <constraint firstItem="hFO-be-saW" firstAttribute="trailing" secondItem="QeK-8x-8x2" secondAttribute="trailing" id="HHj-je-kSv"/>
                             <constraint firstItem="GKe-iQ-EJQ" firstAttribute="centerX" secondItem="dbh-Lq-ohz" secondAttribute="centerX" id="JYH-OA-9L6"/>
-                            <constraint firstItem="GKe-iQ-EJQ" firstAttribute="centerY" secondItem="dbh-Lq-ohz" secondAttribute="centerY" id="K8j-l2-hib"/>
-                            <constraint firstItem="dbh-Lq-ohz" firstAttribute="top" secondItem="QeK-8x-8x2" secondAttribute="top" id="OrM-ng-7AT"/>
                             <constraint firstItem="hFO-be-saW" firstAttribute="bottom" secondItem="QeK-8x-8x2" secondAttribute="bottom" id="axX-PB-JIm"/>
+                            <constraint firstItem="dbh-Lq-ohz" firstAttribute="top" secondItem="8Lb-Na-d9Q" secondAttribute="top" id="cro-Ag-ItO"/>
                             <constraint firstItem="dbh-Lq-ohz" firstAttribute="leading" secondItem="8Lb-Na-d9Q" secondAttribute="leading" id="ekE-ZW-pXT"/>
                             <constraint firstAttribute="trailing" secondItem="dbh-Lq-ohz" secondAttribute="trailing" id="hPN-OV-R1q"/>
                             <constraint firstItem="hFO-be-saW" firstAttribute="leading" secondItem="QeK-8x-8x2" secondAttribute="leading" id="ppG-2F-9pm"/>
@@ -1595,7 +1595,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="h7s-or-16d"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6o-yJ-wbK" userLabel="Title Lbl">
-                                <rect key="frame" x="127" y="38.333333333333336" width="160" height="23.333333333333336"/>
+                                <rect key="frame" x="127" y="56.666666666666664" width="160" height="23.333333333333336"/>
                                 <attributedString key="attributedText">
                                     <fragment content="今、聴きたい音楽">
                                         <attributes>
@@ -1611,14 +1611,14 @@
                         <color key="backgroundColor" red="1" green="0.89411764705882346" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nFD-Ob-1Dr" firstAttribute="leading" secondItem="Xik-mz-PlU" secondAttribute="leading" id="7ve-n2-hgO"/>
+                            <constraint firstItem="XzR-AN-kQW" firstAttribute="top" secondItem="uZM-eS-rc2" secondAttribute="top" id="9me-KV-kdM"/>
                             <constraint firstItem="B6o-yJ-wbK" firstAttribute="centerX" secondItem="XzR-AN-kQW" secondAttribute="centerX" id="E8C-dp-cQz"/>
-                            <constraint firstItem="XzR-AN-kQW" firstAttribute="top" secondItem="Xik-mz-PlU" secondAttribute="top" id="MZ6-02-kbS"/>
-                            <constraint firstItem="B6o-yJ-wbK" firstAttribute="centerY" secondItem="XzR-AN-kQW" secondAttribute="centerY" id="Mr2-iL-AXF"/>
                             <constraint firstItem="nFD-Ob-1Dr" firstAttribute="trailing" secondItem="Xik-mz-PlU" secondAttribute="trailing" id="Q9b-yM-a8T"/>
                             <constraint firstAttribute="trailing" secondItem="XzR-AN-kQW" secondAttribute="trailing" id="Wlf-qg-anQ"/>
                             <constraint firstItem="nFD-Ob-1Dr" firstAttribute="bottom" secondItem="Xik-mz-PlU" secondAttribute="bottom" id="nRI-x2-vmk"/>
                             <constraint firstItem="XzR-AN-kQW" firstAttribute="leading" secondItem="uZM-eS-rc2" secondAttribute="leading" id="npR-Yt-XV4"/>
                             <constraint firstItem="nFD-Ob-1Dr" firstAttribute="top" secondItem="XzR-AN-kQW" secondAttribute="bottom" id="rTH-zj-bLB"/>
+                            <constraint firstItem="nFD-Ob-1Dr" firstAttribute="top" secondItem="B6o-yJ-wbK" secondAttribute="bottom" constant="20" id="ueB-fP-8Se"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feeling" image="heart" catalog="system" selectedImage="heart" id="7eu-ts-rmu"/>
