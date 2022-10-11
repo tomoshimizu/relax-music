@@ -65,7 +65,7 @@ class StatusViewController: UIViewController {
         if myBasePlayer.pauseSound() {
             // 再生ボタンを表示
             let img = UIImage(systemName: "play.circle")
-            statuBtn.tintColor = UIColor(hex: "FFFFFF")
+            statusBtn.tintColor = UIColor(hex: "FFFFFF")
             statusBtn.setBackgroundImage(img, for: .normal)
         } else {
             // 一時停止ボタンを表示
