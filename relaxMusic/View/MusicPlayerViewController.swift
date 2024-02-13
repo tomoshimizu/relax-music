@@ -17,7 +17,6 @@ class MusicPlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playImageView.image = UIImage(named: "play_music")
         bindViewModel()
     }
     
@@ -28,6 +27,14 @@ class MusicPlayerViewController: UIViewController {
     }
     
     private func bindViewModel() {
+        viewModel.playImageURL
+            .compactMap { $0 }
+            .compactMap { URL(string: $0) }
+            .subscribe(onNext: { [weak self] url in
+                self?.playImageView.loadImage(from: url)
+            })
+            .disposed(by: disposeBag)
+        
         viewModel.message
             .bind(to: messageLbl.rx.text)
             .disposed(by: disposeBag)

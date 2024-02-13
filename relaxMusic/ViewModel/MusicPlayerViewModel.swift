@@ -3,30 +3,19 @@ import RxSwift
 import RxCocoa
 import AVFoundation
 
-enum MusicScene {
-    case sleep
-    case work
-}
-
 class MusicPlayerViewModel {
     
-    private var musicScene: MusicScene? {
-        didSet {
-            updateMessage()
-        }
-    }
-    private var soundName: String = ""
+    private var music: Music!
     private let audioPlayer = AudioPlayerManager()
     private let disposeBag = DisposeBag()
     
-    var repeatIsEnabled = BehaviorSubject<Bool>(value: false)
+    var playImageURL = BehaviorSubject<String?>(value: nil)
     var message = BehaviorSubject<String?>(value: nil)
     var playPauseButtonImage = BehaviorSubject<UIImage?>(value: UIImage(systemName: "pause.circle"))
     var repeatButtonTintColor = BehaviorSubject<UIColor?>(value: UIColor(hex: "FFFFFF"))
+    var repeatIsEnabled = BehaviorSubject<Bool>(value: false)
     
     init() {
-        setInitialButtonImages()
-        
         repeatIsEnabled
             .subscribe(onNext: { [weak self] isEnabled in
                 self?.audioPlayer.audioPlayer?.numberOfLoops = isEnabled ? -1 : 0
@@ -35,13 +24,15 @@ class MusicPlayerViewModel {
             .disposed(by: disposeBag)
     }
     
-    func configure(soundName: String, musicScene: MusicScene) {
-        self.soundName = soundName
-        self.musicScene = musicScene
+    func configure(music: Music) {
+        self.music = music
+        
+        updatePlayImage()
+        updateMessage()
     }
     
     func playSound() {
-        audioPlayer.playSound(soundName: NSDataAsset(name: soundName)!)
+        audioPlayer.playSound(soundName: NSDataAsset(name: music.soundFileName)!)
     }
     
     func pauseOrResumeMusic() {
@@ -52,23 +43,11 @@ class MusicPlayerViewModel {
         }
     }
     
-    private func updateMessage() {
-        let newMessage: String?
-        
-        switch musicScene {
-        case .sleep:
-            newMessage = "今日も一日お疲れさまでした"
-        case .work:
-            newMessage = "初心を忘れずに"
-        case .none:
-            newMessage = nil
-        }
-        
-        message.onNext(newMessage)
+    private func updatePlayImage() {
+        playImageURL.onNext(music.imageURL)
     }
     
-    private func setInitialButtonImages() {
-        playPauseButtonImage.onNext(UIImage(systemName: "pause.circle"))
-        repeatButtonTintColor.onNext(UIColor(hex: "FFFFFF"))
+    private func updateMessage() {
+        message.onNext(music.title)
     }
 }

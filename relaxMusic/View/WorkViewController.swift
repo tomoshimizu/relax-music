@@ -103,6 +103,6 @@ extension WorkViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let music = viewModel.musicList[indexPath.row % viewModel.musicList.count]
-        Transition.toPlaySoundView(soundName: music.soundFileName, musicScene: .work)
+        Transition.toPlaySoundView(music: music)
     }
 }
