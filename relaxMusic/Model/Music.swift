@@ -2,7 +2,7 @@ import Foundation
 
 enum MusicScene {
     case sleep
-    case work
+    case read
 }
 
 struct Music {

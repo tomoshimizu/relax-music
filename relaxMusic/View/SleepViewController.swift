@@ -36,7 +36,7 @@ class SleepViewController: UIViewController {
     }
     
     private func setupTitleLabel() {
-        titleLabel.text = "寝る前に聴きたい音楽"
+        titleLabel.text = "ぐっすり眠れる音楽"
         titleLabel.textColor = .white
         titleLabel.font = UIFont(name: "ShipporiMinchoB1-Bold", size: 20)
         titleLabel.textAlignment = .center

@@ -1,10 +1,10 @@
 import UIKit
 
-class WorkViewController: UIViewController {
+class ReadViewController: UIViewController {
     
     // MARK: - Variables
     
-    private let viewModel = WorkViewModel()
+    private let viewModel = ReadViewModel()
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private var collectionView: UICollectionView!
@@ -36,7 +36,7 @@ class WorkViewController: UIViewController {
     }
     
     private func setupTitleLabel() {
-        titleLabel.text = "頑張りたいときに聴く音楽"
+        titleLabel.text = "読書がはかどる音楽"
         titleLabel.textColor = .white
         titleLabel.font = UIFont(name: "ShipporiMinchoB1-Bold", size: 20)
         titleLabel.textAlignment = .center
@@ -77,7 +77,7 @@ class WorkViewController: UIViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension WorkViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ReadViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.musicList.count
@@ -99,7 +99,7 @@ extension WorkViewController: UICollectionViewDataSource, UICollectionViewDelega
 
 // MARK: - UICollectionViewDelegate
 
-extension WorkViewController: UICollectionViewDelegate {
+extension ReadViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let music = viewModel.musicList[indexPath.row % viewModel.musicList.count]
