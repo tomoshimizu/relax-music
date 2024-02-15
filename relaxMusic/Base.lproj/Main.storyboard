@@ -99,22 +99,22 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="closeBtn" destination="BrA-gZ-eSY" id="8cp-aP-ZaV"/>
-                        <outlet property="customBtn" destination="ThO-jY-9Z4" id="TYY-J3-KhL"/>
-                        <outlet property="messageLbl" destination="LR4-Qu-enE" id="YYT-wU-HkC"/>
-                        <outlet property="playImageView" destination="9JG-mq-jEY" id="Qln-ge-shc"/>
-                        <outlet property="repeatBtn" destination="Vzm-dS-rFY" id="20Y-je-SHL"/>
-                        <outlet property="statusBtn" destination="oRw-cj-qQJ" id="QtT-af-NaK"/>
+                        <outlet property="addNaturalSoundButton" destination="ThO-jY-9Z4" id="TYY-J3-KhL"/>
+                        <outlet property="closeButton" destination="BrA-gZ-eSY" id="8cp-aP-ZaV"/>
+                        <outlet property="messageLabel" destination="LR4-Qu-enE" id="YYT-wU-HkC"/>
+                        <outlet property="musicImageView" destination="9JG-mq-jEY" id="Qln-ge-shc"/>
+                        <outlet property="playAndPauseButton" destination="oRw-cj-qQJ" id="QtT-af-NaK"/>
+                        <outlet property="repeatButton" destination="Vzm-dS-rFY" id="20Y-je-SHL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9P-lM-Gtj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1438" y="-765"/>
         </scene>
-        <!--Modal View Controller-->
+        <!--Natural Sound View Controller-->
         <scene sceneID="9PF-Fb-U11">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="1wo-Ud-vap" customClass="ModalViewController" customModule="こころの音楽" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="1wo-Ud-vap" customClass="NaturalSoundViewController" customModule="こころの音楽" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qYR-NL-QpZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,7 +329,7 @@
         <image name="speaker.slash" catalog="system" width="115" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

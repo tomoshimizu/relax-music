@@ -1,6 +1,8 @@
 import UIKit
+import RxSwift
+import RxCocoa
 
-class ModalViewController: UIViewController {
+class NaturalSoundViewController: UIViewController {
 
     // プレーヤーをインスタンス化
     let customPlayer = AudioPlayerManager()

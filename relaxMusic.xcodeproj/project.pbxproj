@@ -11,7 +11,6 @@
 		C558325B2480DD030070FA99 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558325A2480DD030070FA99 /* AudioPlayerManager.swift */; };
 		C566B138246FB3AF001F9515 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566B137246FB3AF001F9515 /* SleepViewController.swift */; };
 		C566B13A246FB5D9001F9515 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566B139246FB5D9001F9515 /* UIColor.swift */; };
-		C566B13C246FB9CE001F9515 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566B13B246FB9CE001F9515 /* CustomButton.swift */; };
 		C56D6C9A247355C100812E0F /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D6C99247355C100812E0F /* MusicPlayerViewController.swift */; };
 		C5B0E59324663AD900CFD961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B0E59224663AD900CFD961 /* AppDelegate.swift */; };
 		C5B0E59524663AD900CFD961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B0E59424663AD900CFD961 /* SceneDelegate.swift */; };
@@ -20,7 +19,7 @@
 		C5B0E59E24663ADE00CFD961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B0E59D24663ADE00CFD961 /* Assets.xcassets */; };
 		C5B0E5A124663ADE00CFD961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B0E59F24663ADE00CFD961 /* LaunchScreen.storyboard */; };
 		C5B40B73248E01FA00EA6B1D /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40B72248E01FA00EA6B1D /* UIAlertController.swift */; };
-		C5B40B75248E24BE00EA6B1D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40B74248E24BE00EA6B1D /* ModalViewController.swift */; };
+		C5B40B75248E24BE00EA6B1D /* NaturalSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40B74248E24BE00EA6B1D /* NaturalSoundViewController.swift */; };
 		D33930552B7B332400779C9C /* ShipporiMinchoB1-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D33930502B7B332300779C9C /* ShipporiMinchoB1-Bold.ttf */; };
 		D33930562B7B332400779C9C /* ShipporiMinchoB1-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D33930512B7B332400779C9C /* ShipporiMinchoB1-ExtraBold.ttf */; };
 		D33930572B7B332400779C9C /* ShipporiMinchoB1-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D33930522B7B332400779C9C /* ShipporiMinchoB1-Regular.ttf */; };
@@ -34,6 +33,7 @@
 		D39B0B762B7B3904007880F5 /* MusicPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B0B752B7B3904007880F5 /* MusicPlayerViewModel.swift */; };
 		D3DC9B1326FC4F7A00F20B68 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC9B1226FC4F7A00F20B68 /* Transition.swift */; };
 		D3DC9B1526FC521400F20B68 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC9B1426FC521400F20B68 /* UIApplication.swift */; };
+		D3FA5F372B7D8BDA0009E9C3 /* NaturalSoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA5F362B7D8BDA0009E9C3 /* NaturalSoundViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,6 @@
 		C558325A2480DD030070FA99 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		C566B137246FB3AF001F9515 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
 		C566B139246FB5D9001F9515 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		C566B13B246FB9CE001F9515 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C56D6C99247355C100812E0F /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		C5B0E58F24663AD900CFD961 /* こころの音楽.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "こころの音楽.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B0E59224663AD900CFD961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +53,7 @@
 		C5B0E5A024663ADE00CFD961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B0E5A224663ADE00CFD961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B40B72248E01FA00EA6B1D /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
-		C5B40B74248E24BE00EA6B1D /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C5B40B74248E24BE00EA6B1D /* NaturalSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalSoundViewController.swift; sourceTree = "<group>"; };
 		D33930502B7B332300779C9C /* ShipporiMinchoB1-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShipporiMinchoB1-Bold.ttf"; sourceTree = "<group>"; };
 		D33930512B7B332400779C9C /* ShipporiMinchoB1-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShipporiMinchoB1-ExtraBold.ttf"; sourceTree = "<group>"; };
 		D33930522B7B332400779C9C /* ShipporiMinchoB1-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShipporiMinchoB1-Regular.ttf"; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		D39B0B752B7B3904007880F5 /* MusicPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewModel.swift; sourceTree = "<group>"; };
 		D3DC9B1226FC4F7A00F20B68 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		D3DC9B1426FC521400F20B68 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		D3FA5F362B7D8BDA0009E9C3 /* NaturalSoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalSoundViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,6 @@
 		C55832512480B6280070FA99 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				C566B13B246FB9CE001F9515 /* CustomButton.swift */,
 				D346928D2B7B0B220098124A /* CustomCollectionViewCell.swift */,
 			);
 			path = Custom;
@@ -191,7 +190,7 @@
 				C566B137246FB3AF001F9515 /* SleepViewController.swift */,
 				C5B0E59624663AD900CFD961 /* ReadViewController.swift */,
 				C56D6C99247355C100812E0F /* MusicPlayerViewController.swift */,
-				D34692932B7B10CA0098124A /* Modal */,
+				C5B40B74248E24BE00EA6B1D /* NaturalSoundViewController.swift */,
 				C55832512480B6280070FA99 /* Custom */,
 			);
 			path = View;
@@ -211,16 +210,9 @@
 				D346928B2B7B00830098124A /* SleepViewModel.swift */,
 				D34692902B7B0E960098124A /* ReadViewModel.swift */,
 				D39B0B752B7B3904007880F5 /* MusicPlayerViewModel.swift */,
+				D3FA5F362B7D8BDA0009E9C3 /* NaturalSoundViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		D34692932B7B10CA0098124A /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-				C5B40B74248E24BE00EA6B1D /* ModalViewController.swift */,
-			);
-			path = Modal;
 			sourceTree = "<group>";
 		};
 		D3DC9B1126FC4F5F00F20B68 /* Utility */ = {
@@ -362,11 +354,11 @@
 				C5B0E59324663AD900CFD961 /* AppDelegate.swift in Sources */,
 				D3DC9B1526FC521400F20B68 /* UIApplication.swift in Sources */,
 				D39B0B762B7B3904007880F5 /* MusicPlayerViewModel.swift in Sources */,
+				D3FA5F372B7D8BDA0009E9C3 /* NaturalSoundViewModel.swift in Sources */,
 				D34692912B7B0E960098124A /* ReadViewModel.swift in Sources */,
 				D3DC9B1326FC4F7A00F20B68 /* Transition.swift in Sources */,
 				C5B0E59524663AD900CFD961 /* SceneDelegate.swift in Sources */,
-				C5B40B75248E24BE00EA6B1D /* ModalViewController.swift in Sources */,
-				C566B13C246FB9CE001F9515 /* CustomButton.swift in Sources */,
+				C5B40B75248E24BE00EA6B1D /* NaturalSoundViewController.swift in Sources */,
 				D34692992B7B1E310098124A /* UIImageView.swift in Sources */,
 				D346928E2B7B0B220098124A /* CustomCollectionViewCell.swift in Sources */,
 				D346928A2B7B00430098124A /* Music.swift in Sources */,

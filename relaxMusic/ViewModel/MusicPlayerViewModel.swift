@@ -6,48 +6,43 @@ import AVFoundation
 class MusicPlayerViewModel {
     
     private var music: Music!
-    private let audioPlayer = AudioPlayerManager()
+    private let audioPlayerManager = AudioPlayerManager()
     private let disposeBag = DisposeBag()
     
-    var playImageURL = BehaviorSubject<String?>(value: nil)
-    var message = BehaviorSubject<String?>(value: nil)
-    var playPauseButtonImage = BehaviorSubject<UIImage?>(value: UIImage(systemName: "pause.circle"))
-    var repeatButtonTintColor = BehaviorSubject<UIColor?>(value: UIColor(hex: "FFFFFF"))
+    var playAndPauseImage = BehaviorSubject<UIImage?>(value: UIImage(systemName: "pause.circle"))
     var repeatIsEnabled = BehaviorSubject<Bool>(value: false)
     
-    init() {
+    init(music: Music) {
+        self.music = music
+        setup()
+    }
+    
+    func setup() {
         repeatIsEnabled
             .subscribe(onNext: { [weak self] isEnabled in
-                self?.audioPlayer.audioPlayer?.numberOfLoops = isEnabled ? -1 : 0
-                self?.repeatButtonTintColor.onNext(isEnabled ? .blue : .white)
+                self?.audioPlayerManager.audioPlayer?.numberOfLoops = isEnabled ? -1 : 0
             })
             .disposed(by: disposeBag)
-    }
-    
-    func configure(music: Music) {
-        self.music = music
         
-        updatePlayImage()
-        updateMessage()
+        playAndPauseMusic()
     }
     
-    func playSound() {
-        audioPlayer.playSound(soundName: NSDataAsset(name: music.soundFileName)!)
-    }
-    
-    func pauseOrResumeMusic() {
-        if audioPlayer.pauseSound() {
-            playPauseButtonImage.onNext(UIImage(systemName: "play.circle"))
+    func playAndPauseMusic() {
+        guard let player = audioPlayerManager.audioPlayer else {
+            return
+        }
+
+        if player.isPlaying {
+            player.stop()
+            updatePlayPauseImage(isPlaying: false)
         } else {
-            playPauseButtonImage.onNext(UIImage(systemName: "pause.circle"))
+            audioPlayerManager.playSound(soundName: NSDataAsset(name: music.soundFileName)!)
+            updatePlayPauseImage(isPlaying: true)
         }
     }
     
-    private func updatePlayImage() {
-        playImageURL.onNext(music.imageURL)
-    }
-    
-    private func updateMessage() {
-        message.onNext(music.title)
+    private func updatePlayPauseImage(isPlaying: Bool) {
+        let systemImageName = isPlaying ? "pause.circle" : "play.circle"
+        playAndPauseImage.onNext(UIImage(systemName: systemImageName))
     }
 }

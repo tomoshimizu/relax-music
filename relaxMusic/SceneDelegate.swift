@@ -7,8 +7,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let tabBarController = UITabBarController()
 
-        tabBarController.tabBar.barTintColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
-        tabBarController.tabBar.tintColor = .white
+        tabBarController.tabBar.backgroundColor = UIColor(hex: "3B5566")
+        tabBarController.tabBar.tintColor = UIColor(hex: "38EDFF")
         
         let sleepViewController = SleepViewController()
         sleepViewController.tabBarItem = UITabBarItem(title: "寝る", image: UIImage(systemName: "moon.stars"), tag: 0)
